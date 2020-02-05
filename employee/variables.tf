@@ -1,5 +1,5 @@
 variable "key_name" {
-  default = "sampleuserpage"
+  default = "music"
 }
 
 variable "pvt_key" {
