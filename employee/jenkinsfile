@@ -40,8 +40,8 @@ node {
         def server= Artifactory.server 'Artifactory'
                     def uploadSpec= """{
                         "files": [{
-                        "pattern": "/home/mtadminnuvepro/.jenkins/workspace/kalingamusic/kalingamusic/target/*.war",
-                        "target": "Kalingamusic"}]
+                        "pattern": "/home/mtadminnuvepro/.jenkins/workspace/sampleuserpage/employee/target/*.war",
+                        "target": "sampleuserpage"}]
                     }"""
         server.upload(uploadSpec)
         
@@ -52,7 +52,7 @@ node {
     def downloadSpec = """{
     "files": [
     {
-      "pattern": "Kalingamusic/*.war",
+      "pattern": "sampleuserpage/*.war",
       "target": "/home/mtadminnuvepro/artifacts/"
       
     }
